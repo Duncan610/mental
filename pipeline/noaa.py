@@ -121,7 +121,7 @@ def run_noaa_pipeline(settings: Settings) -> dlt.Pipeline:
     pipeline = dlt.pipeline(
         pipeline_name="mental_health_noaa",
         destination=dlt.destinations.duckdb(
-            credentials="../data/duckdb/mental_health_pulse.duckdb"
+            credentials="data/duckdb/mental_health_pulse.duckdb"
         ),
         dataset_name="raw_noaa",
     )
@@ -244,7 +244,7 @@ def run_bls_pipeline(settings: Settings) -> dlt.Pipeline:
     pipeline = dlt.pipeline(
         pipeline_name="mental_health_bls",
         destination=dlt.destinations.duckdb(
-            credentials="../data/duckdb/mental_health_pulse.duckdb"
+            credentials="data/duckdb/mental_health_pulse.duckdb"
         ),
         dataset_name="raw_bls",
     )
@@ -328,7 +328,7 @@ def run_samhsa_pipeline(settings: Settings) -> dlt.Pipeline:
     pipeline = dlt.pipeline(
         pipeline_name="mental_health_samhsa",
         destination=dlt.destinations.duckdb(
-            credentials="../data/duckdb/mental_health_pulse.duckdb"
+            credentials="data/duckdb/mental_health_pulse.duckdb"
         ),
         dataset_name="raw_samhsa",
     )
