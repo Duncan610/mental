@@ -1,0 +1,9 @@
+
+mental_health_pulse:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '/content/mental/data/duckdb/mental_health_pulse.duckdb'
+      schema: main
+      threads: 4

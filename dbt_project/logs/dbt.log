@@ -1,0 +1,773 @@
+[0m13:56:39.723779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7800ceb76570>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7800cb970530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7800cb970620>]}
+
+
+============================== 13:56:39.727924 | 4ad6b2fd-ff92-4d33-8aef-04077593245d ==============================
+[0m13:56:39.727924 [info ] [MainThread]: Running with dbt=1.8.7
+[0m13:56:39.728745 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/content/mental/config', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/content/mental/dbt_project/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt deps --profiles-dir /content/mental/config', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:56:39.936790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4ad6b2fd-ff92-4d33-8aef-04077593245d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7800cb871280>]}
+[0m13:56:39.995523 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:56:39.996622 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m13:56:39.997799 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 0.35662997, "process_user_time": 4.735539, "process_kernel_time": 0.278058, "process_mem_max_rss": "122896", "process_in_blocks": "11192", "process_out_blocks": "10816"}
+[0m13:56:39.998447 [debug] [MainThread]: Command `dbt deps` succeeded at 13:56:39.998311 after 0.36 seconds
+[0m13:56:39.998987 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7800cbc132c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7800cbc13320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7800cb84f980>]}
+[0m13:56:39.999456 [debug] [MainThread]: Flushing usage events
+[0m13:56:46.521200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a150db9b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a150db680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a150db980>]}
+
+
+============================== 13:56:46.532578 | 239b40fe-1d5e-40d1-bcad-a6c6ef3a4386 ==============================
+[0m13:56:46.532578 [info ] [MainThread]: Running with dbt=1.8.7
+[0m13:56:46.533757 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/content/mental/dbt_project/logs', 'profiles_dir': '/content/mental/config', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --select staging --profiles-dir /content/mental/config', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:56:47.763021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '239b40fe-1d5e-40d1-bcad-a6c6ef3a4386', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a15088ce0>]}
+[0m13:56:47.905999 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '239b40fe-1d5e-40d1-bcad-a6c6ef3a4386', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a158e5130>]}
+[0m13:56:47.918436 [info ] [MainThread]: Registered adapter: duckdb=1.8.4
+[0m13:56:48.116249 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m13:56:48.117779 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:56:48.118763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '239b40fe-1d5e-40d1-bcad-a6c6ef3a4386', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a15046f60>]}
+[0m13:56:50.341524 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `tests` config has been renamed to `data_tests`. Please see
+https://docs.getdbt.com/docs/build/data-tests#new-data_tests-syntax for more
+information.
+[0m13:56:50.346404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '239b40fe-1d5e-40d1-bcad-a6c6ef3a4386', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a10400bc0>]}
+[0m13:56:52.149607 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.mental_health_pulse.marts
+- models.mental_health_pulse.intermediate
+[0m13:56:52.176912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '239b40fe-1d5e-40d1-bcad-a6c6ef3a4386', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a1086c350>]}
+[0m13:56:52.431914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '239b40fe-1d5e-40d1-bcad-a6c6ef3a4386', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a0bdc79e0>]}
+[0m13:56:52.432770 [info ] [MainThread]: Found 2 models, 10 data tests, 2 sources, 421 macros
+[0m13:56:52.433334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '239b40fe-1d5e-40d1-bcad-a6c6ef3a4386', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a0bdb7860>]}
+[0m13:56:52.435866 [info ] [MainThread]: 
+[0m13:56:52.436735 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:56:52.442870 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_mental_health_pulse'
+[0m13:56:52.519641 [debug] [ThreadPool]: Using duckdb connection "list_mental_health_pulse"
+[0m13:56:52.520261 [debug] [ThreadPool]: On list_mental_health_pulse: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "connection_name": "list_mental_health_pulse"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"mental_health_pulse"'
+    
+  
+  
+[0m13:56:52.520860 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:56:52.535789 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m13:56:52.537756 [debug] [ThreadPool]: On list_mental_health_pulse: Close
+[0m13:56:52.540850 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_mental_health_pulse, now create_mental_health_pulse_main_staging)
+[0m13:56:52.541673 [debug] [ThreadPool]: Creating schema "database: "mental_health_pulse"
+schema: "main_staging"
+"
+[0m13:56:52.550086 [debug] [ThreadPool]: Using duckdb connection "create_mental_health_pulse_main_staging"
+[0m13:56:52.550661 [debug] [ThreadPool]: On create_mental_health_pulse_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "connection_name": "create_mental_health_pulse_main_staging"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='mental_health_pulse'
+        and type='sqlite'
+    
+  
+[0m13:56:52.551098 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:56:52.563316 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m13:56:52.565275 [debug] [ThreadPool]: Using duckdb connection "create_mental_health_pulse_main_staging"
+[0m13:56:52.565802 [debug] [ThreadPool]: On create_mental_health_pulse_main_staging: BEGIN
+[0m13:56:52.566575 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:56:52.567019 [debug] [ThreadPool]: Using duckdb connection "create_mental_health_pulse_main_staging"
+[0m13:56:52.567388 [debug] [ThreadPool]: On create_mental_health_pulse_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "connection_name": "create_mental_health_pulse_main_staging"} */
+
+    
+    
+        create schema if not exists "mental_health_pulse"."main_staging"
+    
+[0m13:56:52.568218 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m13:56:52.569546 [debug] [ThreadPool]: On create_mental_health_pulse_main_staging: COMMIT
+[0m13:56:52.569995 [debug] [ThreadPool]: Using duckdb connection "create_mental_health_pulse_main_staging"
+[0m13:56:52.570369 [debug] [ThreadPool]: On create_mental_health_pulse_main_staging: COMMIT
+[0m13:56:52.576667 [debug] [ThreadPool]: SQL status: OK in 0.006 seconds
+[0m13:56:52.577294 [debug] [ThreadPool]: On create_mental_health_pulse_main_staging: Close
+[0m13:56:52.608031 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_mental_health_pulse_main_staging, now list_mental_health_pulse_main_staging)
+[0m13:56:52.615014 [debug] [ThreadPool]: Using duckdb connection "list_mental_health_pulse_main_staging"
+[0m13:56:52.615591 [debug] [ThreadPool]: On list_mental_health_pulse_main_staging: BEGIN
+[0m13:56:52.615995 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:56:52.628089 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m13:56:52.628713 [debug] [ThreadPool]: Using duckdb connection "list_mental_health_pulse_main_staging"
+[0m13:56:52.629162 [debug] [ThreadPool]: On list_mental_health_pulse_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "connection_name": "list_mental_health_pulse_main_staging"} */
+select
+      'mental_health_pulse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_staging'
+    and table_catalog = 'mental_health_pulse'
+  
+[0m13:56:52.667587 [debug] [ThreadPool]: SQL status: OK in 0.038 seconds
+[0m13:56:52.669425 [debug] [ThreadPool]: On list_mental_health_pulse_main_staging: ROLLBACK
+[0m13:56:52.670985 [debug] [ThreadPool]: Failed to rollback 'list_mental_health_pulse_main_staging'
+[0m13:56:52.671470 [debug] [ThreadPool]: On list_mental_health_pulse_main_staging: Close
+[0m13:56:52.675591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '239b40fe-1d5e-40d1-bcad-a6c6ef3a4386', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a10925d00>]}
+[0m13:56:52.676306 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:56:52.676825 [debug] [MainThread]: On master: BEGIN
+[0m13:56:52.677205 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:56:52.690111 [debug] [MainThread]: SQL status: OK in 0.013 seconds
+[0m13:56:52.690730 [debug] [MainThread]: On master: COMMIT
+[0m13:56:52.691121 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:56:52.691502 [debug] [MainThread]: On master: COMMIT
+[0m13:56:52.692223 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:56:52.692712 [debug] [MainThread]: On master: Close
+[0m13:56:52.695814 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:56:52.696466 [info ] [MainThread]: 
+[0m13:56:52.699985 [debug] [Thread-1 (]: Began running node model.mental_health_pulse.stg_bluesky__posts
+[0m13:56:52.700714 [debug] [Thread-2 (]: Began running node model.mental_health_pulse.stg_cdc__mortality
+[0m13:56:52.701512 [info ] [Thread-1 (]: 1 of 2 START sql view model main_staging.stg_bluesky__posts .................... [RUN]
+[0m13:56:52.702388 [info ] [Thread-2 (]: 2 of 2 START sql view model main_staging.stg_cdc__mortality .................... [RUN]
+[0m13:56:52.703651 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_mental_health_pulse_main_staging, now model.mental_health_pulse.stg_bluesky__posts)
+[0m13:56:52.704419 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.mental_health_pulse.stg_cdc__mortality'
+[0m13:56:52.705088 [debug] [Thread-1 (]: Began compiling node model.mental_health_pulse.stg_bluesky__posts
+[0m13:56:52.705667 [debug] [Thread-2 (]: Began compiling node model.mental_health_pulse.stg_cdc__mortality
+[0m13:56:52.715464 [debug] [Thread-1 (]: Writing injected SQL for node "model.mental_health_pulse.stg_bluesky__posts"
+[0m13:56:52.719332 [debug] [Thread-2 (]: Writing injected SQL for node "model.mental_health_pulse.stg_cdc__mortality"
+[0m13:56:52.720669 [debug] [Thread-2 (]: Began executing node model.mental_health_pulse.stg_cdc__mortality
+[0m13:56:52.721261 [debug] [Thread-1 (]: Began executing node model.mental_health_pulse.stg_bluesky__posts
+[0m13:56:52.805349 [debug] [Thread-2 (]: Writing runtime sql for node "model.mental_health_pulse.stg_cdc__mortality"
+[0m13:56:52.807219 [debug] [Thread-1 (]: Writing runtime sql for node "model.mental_health_pulse.stg_bluesky__posts"
+[0m13:56:52.808712 [debug] [Thread-1 (]: Using duckdb connection "model.mental_health_pulse.stg_bluesky__posts"
+[0m13:56:52.809333 [debug] [Thread-2 (]: Using duckdb connection "model.mental_health_pulse.stg_cdc__mortality"
+[0m13:56:52.809933 [debug] [Thread-1 (]: On model.mental_health_pulse.stg_bluesky__posts: BEGIN
+[0m13:56:52.810566 [debug] [Thread-2 (]: On model.mental_health_pulse.stg_cdc__mortality: BEGIN
+[0m13:56:52.811124 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:56:52.811702 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:56:52.824829 [debug] [Thread-1 (]: SQL status: OK in 0.014 seconds
+[0m13:56:52.825756 [debug] [Thread-2 (]: SQL status: OK in 0.014 seconds
+[0m13:56:52.826516 [debug] [Thread-1 (]: Using duckdb connection "model.mental_health_pulse.stg_bluesky__posts"
+[0m13:56:52.827249 [debug] [Thread-2 (]: Using duckdb connection "model.mental_health_pulse.stg_cdc__mortality"
+[0m13:56:52.828040 [debug] [Thread-1 (]: On model.mental_health_pulse.stg_bluesky__posts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "model.mental_health_pulse.stg_bluesky__posts"} */
+
+  
+  create view "mental_health_pulse"."main_staging"."stg_bluesky__posts__dbt_tmp" as (
+    with source as (
+    select * from "mental_health_pulse"."raw_bluesky"."posts"
+),
+
+renamed as (
+    select
+        post_uri                                    as post_uri,
+        post_cid                                    as post_cid,
+        author_did                                  as author_did,
+        lower(author_handle)                        as author_handle,
+        nullif(trim(post_text), '')                 as post_text,
+        coalesce(like_count, 0)                     as like_count,
+        coalesce(repost_count, 0)                   as repost_count,
+        coalesce(reply_count, 0)                    as reply_count,
+        coalesce(like_count, 0)
+            + coalesce(repost_count, 0)
+            + coalesce(reply_count, 0)              as total_engagement,
+        search_term                                 as matched_search_term,
+        case
+            when lower(search_term) in ('#depression', 'feeling depressed')
+                then 'depression'
+            when lower(search_term) in ('#anxiety', 'anxiety attack')
+                then 'anxiety'
+            when lower(search_term) in ('#suicideprevention', 'mental health crisis')
+                then 'crisis'
+            when lower(search_term) in ('#recoveryispossible', '#therapyworks')
+                then 'recovery'
+            else 'general'
+        end                                         as topic_category,
+        langs                                       as post_langs,
+        case when langs ilike '%en%' then true
+             else false end                         as is_english,
+        cast(created_at as timestamp)               as post_created_at,
+        cast(created_at as date)                    as post_date,
+        _dlt_load_id                                as _loaded_at
+    from source
+),
+
+deduplicated as (
+    select *
+    from renamed
+    qualify row_number() over (
+        partition by post_uri
+        order by post_created_at desc
+    ) = 1
+)
+
+select * from deduplicated
+  );
+
+[0m13:56:52.828865 [debug] [Thread-2 (]: On model.mental_health_pulse.stg_cdc__mortality: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "model.mental_health_pulse.stg_cdc__mortality"} */
+
+  
+  create view "mental_health_pulse"."main_staging"."stg_cdc__mortality__dbt_tmp" as (
+    with source as (
+    select * from "mental_health_pulse"."raw_cdc"."drug_overdose_monthly"
+),
+
+renamed as (
+    select
+        state_name                                  as state_name,
+        state_abbr                                  as state_abbr,
+        year                                        as report_year,
+        month                                       as report_month,
+        period                                      as report_period,
+        indicator                                   as substance_indicator,
+        data_value                                  as death_count,
+        case when data_value is null
+             then true else false end               as is_suppressed,
+        data_as_of                                  as data_as_of,
+        _dlt_load_id                                as _loaded_at
+    from source
+),
+
+deduplicated as (
+    select *
+    from renamed
+    qualify row_number() over (
+        partition by state_name, report_year, report_month, substance_indicator
+        order by data_as_of desc
+    ) = 1
+)
+
+select * from deduplicated
+  );
+
+[0m13:56:52.831264 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m13:56:52.840375 [debug] [Thread-2 (]: Using duckdb connection "model.mental_health_pulse.stg_cdc__mortality"
+[0m13:56:52.841181 [debug] [Thread-1 (]: SQL status: OK in 0.012 seconds
+[0m13:56:52.841839 [debug] [Thread-2 (]: On model.mental_health_pulse.stg_cdc__mortality: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "model.mental_health_pulse.stg_cdc__mortality"} */
+alter view "mental_health_pulse"."main_staging"."stg_cdc__mortality__dbt_tmp" rename to "stg_cdc__mortality"
+[0m13:56:52.845987 [debug] [Thread-1 (]: Using duckdb connection "model.mental_health_pulse.stg_bluesky__posts"
+[0m13:56:52.846968 [debug] [Thread-1 (]: On model.mental_health_pulse.stg_bluesky__posts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "model.mental_health_pulse.stg_bluesky__posts"} */
+alter view "mental_health_pulse"."main_staging"."stg_bluesky__posts__dbt_tmp" rename to "stg_bluesky__posts"
+[0m13:56:52.847978 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m13:56:52.853918 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m13:56:52.877770 [debug] [Thread-2 (]: On model.mental_health_pulse.stg_cdc__mortality: COMMIT
+[0m13:56:52.880496 [debug] [Thread-1 (]: On model.mental_health_pulse.stg_bluesky__posts: COMMIT
+[0m13:56:52.881158 [debug] [Thread-2 (]: Using duckdb connection "model.mental_health_pulse.stg_cdc__mortality"
+[0m13:56:52.881855 [debug] [Thread-1 (]: Using duckdb connection "model.mental_health_pulse.stg_bluesky__posts"
+[0m13:56:52.882444 [debug] [Thread-2 (]: On model.mental_health_pulse.stg_cdc__mortality: COMMIT
+[0m13:56:52.883050 [debug] [Thread-1 (]: On model.mental_health_pulse.stg_bluesky__posts: COMMIT
+[0m13:56:52.889290 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m13:56:52.897640 [debug] [Thread-2 (]: Using duckdb connection "model.mental_health_pulse.stg_cdc__mortality"
+[0m13:56:52.898341 [debug] [Thread-2 (]: On model.mental_health_pulse.stg_cdc__mortality: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "model.mental_health_pulse.stg_cdc__mortality"} */
+drop view if exists "mental_health_pulse"."main_staging"."stg_cdc__mortality__dbt_backup" cascade
+[0m13:56:52.899005 [debug] [Thread-1 (]: SQL status: OK in 0.015 seconds
+[0m13:56:52.902397 [debug] [Thread-1 (]: Using duckdb connection "model.mental_health_pulse.stg_bluesky__posts"
+[0m13:56:52.903077 [debug] [Thread-1 (]: On model.mental_health_pulse.stg_bluesky__posts: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "model.mental_health_pulse.stg_bluesky__posts"} */
+drop view if exists "mental_health_pulse"."main_staging"."stg_bluesky__posts__dbt_backup" cascade
+[0m13:56:52.903860 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m13:56:52.907189 [debug] [Thread-2 (]: On model.mental_health_pulse.stg_cdc__mortality: Close
+[0m13:56:52.907921 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m13:56:52.909810 [debug] [Thread-1 (]: On model.mental_health_pulse.stg_bluesky__posts: Close
+[0m13:56:52.911852 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '239b40fe-1d5e-40d1-bcad-a6c6ef3a4386', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a168e3e00>]}
+[0m13:56:52.912895 [info ] [Thread-2 (]: 2 of 2 OK created sql view model main_staging.stg_cdc__mortality ............... [[32mOK[0m in 0.21s]
+[0m13:56:52.913971 [debug] [Thread-2 (]: Finished running node model.mental_health_pulse.stg_cdc__mortality
+[0m13:56:52.942176 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '239b40fe-1d5e-40d1-bcad-a6c6ef3a4386', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a0b111160>]}
+[0m13:56:52.943329 [info ] [Thread-1 (]: 1 of 2 OK created sql view model main_staging.stg_bluesky__posts ............... [[32mOK[0m in 0.24s]
+[0m13:56:52.944272 [debug] [Thread-1 (]: Finished running node model.mental_health_pulse.stg_bluesky__posts
+[0m13:56:52.946223 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:56:52.946796 [debug] [MainThread]: On master: BEGIN
+[0m13:56:52.947213 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:56:52.960543 [debug] [MainThread]: SQL status: OK in 0.013 seconds
+[0m13:56:52.961136 [debug] [MainThread]: On master: COMMIT
+[0m13:56:52.961540 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:56:52.961922 [debug] [MainThread]: On master: COMMIT
+[0m13:56:52.962636 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:56:52.963092 [debug] [MainThread]: On master: Close
+[0m13:56:52.966115 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:56:52.966648 [debug] [MainThread]: Connection 'model.mental_health_pulse.stg_bluesky__posts' was properly closed.
+[0m13:56:52.967014 [debug] [MainThread]: Connection 'model.mental_health_pulse.stg_cdc__mortality' was properly closed.
+[0m13:56:52.967575 [info ] [MainThread]: 
+[0m13:56:52.968125 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 0.53 seconds (0.53s).
+[0m13:56:52.969198 [debug] [MainThread]: Command end result
+[0m13:56:53.000269 [info ] [MainThread]: 
+[0m13:56:53.001030 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:56:53.001592 [info ] [MainThread]: 
+[0m13:56:53.002099 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+[0m13:56:53.003223 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 6.8124266, "process_user_time": 8.663598, "process_kernel_time": 0.334898, "process_mem_max_rss": "173524", "process_in_blocks": "2384", "process_out_blocks": "8144"}
+[0m13:56:53.003848 [debug] [MainThread]: Command `dbt run` succeeded at 13:56:53.003720 after 6.81 seconds
+[0m13:56:53.004319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a14ff7c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a153a4830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2a09dca120>]}
+[0m13:56:53.004815 [debug] [MainThread]: Flushing usage events
+[0m13:56:57.336521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7825c518ecf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7825c5101070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7825c5101a30>]}
+
+
+============================== 13:56:57.340899 | 91c7ab42-e4b2-4167-9e3a-2553b4b69e5e ==============================
+[0m13:56:57.340899 [info ] [MainThread]: Running with dbt=1.8.7
+[0m13:56:57.341753 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/content/mental/config', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/content/mental/dbt_project/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test --select staging --profiles-dir /content/mental/config', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:56:57.658871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '91c7ab42-e4b2-4167-9e3a-2553b4b69e5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7825c4fbf020>]}
+[0m13:56:57.752257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '91c7ab42-e4b2-4167-9e3a-2553b4b69e5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7825c5f8e330>]}
+[0m13:56:57.759993 [info ] [MainThread]: Registered adapter: duckdb=1.8.4
+[0m13:56:57.864110 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m13:56:58.129226 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:56:58.129962 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:56:58.138822 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.mental_health_pulse.intermediate
+- models.mental_health_pulse.marts
+[0m13:56:58.187133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '91c7ab42-e4b2-4167-9e3a-2553b4b69e5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7825c0775340>]}
+[0m13:56:58.314328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '91c7ab42-e4b2-4167-9e3a-2553b4b69e5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7825c0254080>]}
+[0m13:56:58.315063 [info ] [MainThread]: Found 2 models, 10 data tests, 2 sources, 421 macros
+[0m13:56:58.315743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '91c7ab42-e4b2-4167-9e3a-2553b4b69e5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7825c021ff80>]}
+[0m13:56:58.318233 [info ] [MainThread]: 
+[0m13:56:58.319111 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m13:56:58.326289 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_mental_health_pulse_main_staging'
+[0m13:56:58.371639 [debug] [ThreadPool]: Using duckdb connection "list_mental_health_pulse_main_staging"
+[0m13:56:58.372215 [debug] [ThreadPool]: On list_mental_health_pulse_main_staging: BEGIN
+[0m13:56:58.372669 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:56:58.388202 [debug] [ThreadPool]: SQL status: OK in 0.015 seconds
+[0m13:56:58.388852 [debug] [ThreadPool]: Using duckdb connection "list_mental_health_pulse_main_staging"
+[0m13:56:58.389296 [debug] [ThreadPool]: On list_mental_health_pulse_main_staging: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "connection_name": "list_mental_health_pulse_main_staging"} */
+select
+      'mental_health_pulse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main_staging'
+    and table_catalog = 'mental_health_pulse'
+  
+[0m13:56:58.427671 [debug] [ThreadPool]: SQL status: OK in 0.038 seconds
+[0m13:56:58.429753 [debug] [ThreadPool]: On list_mental_health_pulse_main_staging: ROLLBACK
+[0m13:56:58.431256 [debug] [ThreadPool]: Failed to rollback 'list_mental_health_pulse_main_staging'
+[0m13:56:58.431767 [debug] [ThreadPool]: On list_mental_health_pulse_main_staging: Close
+[0m13:56:58.436718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '91c7ab42-e4b2-4167-9e3a-2553b4b69e5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7825c0217ad0>]}
+[0m13:56:58.437432 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:56:58.437937 [debug] [MainThread]: On master: BEGIN
+[0m13:56:58.438300 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:56:58.451507 [debug] [MainThread]: SQL status: OK in 0.013 seconds
+[0m13:56:58.452139 [debug] [MainThread]: On master: COMMIT
+[0m13:56:58.452614 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:56:58.453000 [debug] [MainThread]: On master: COMMIT
+[0m13:56:58.453751 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:56:58.454217 [debug] [MainThread]: On master: Close
+[0m13:56:58.457018 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:56:58.457651 [info ] [MainThread]: 
+[0m13:56:58.589040 [debug] [Thread-1 (]: Began running node test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654
+[0m13:56:58.589848 [debug] [Thread-2 (]: Began running node test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0
+[0m13:56:58.590605 [info ] [Thread-1 (]: 1 of 10 START test accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general  [RUN]
+[0m13:56:58.591347 [info ] [Thread-2 (]: 2 of 10 START test not_null_stg_bluesky__posts_post_created_at ................. [RUN]
+[0m13:56:58.592100 [debug] [Thread-3 (]: Began running node test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0
+[0m13:56:58.592749 [debug] [Thread-4 (]: Began running node test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e
+[0m13:56:58.593458 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_mental_health_pulse_main_staging, now test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654)
+[0m13:56:58.594270 [debug] [Thread-2 (]: Acquiring new duckdb connection 'test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0'
+[0m13:56:58.594911 [info ] [Thread-3 (]: 3 of 10 START test not_null_stg_bluesky__posts_post_uri ........................ [RUN]
+[0m13:56:58.595620 [info ] [Thread-4 (]: 4 of 10 START test not_null_stg_bluesky__posts_topic_category .................. [RUN]
+[0m13:56:58.596280 [debug] [Thread-1 (]: Began compiling node test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654
+[0m13:56:58.596883 [debug] [Thread-2 (]: Began compiling node test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0
+[0m13:56:58.597644 [debug] [Thread-3 (]: Acquiring new duckdb connection 'test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0'
+[0m13:56:58.598351 [debug] [Thread-4 (]: Acquiring new duckdb connection 'test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e'
+[0m13:56:58.628960 [debug] [Thread-2 (]: Writing injected SQL for node "test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0"
+[0m13:56:58.633186 [debug] [Thread-1 (]: Writing injected SQL for node "test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654"
+[0m13:56:58.633969 [debug] [Thread-3 (]: Began compiling node test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0
+[0m13:56:58.634644 [debug] [Thread-4 (]: Began compiling node test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e
+[0m13:56:58.645976 [debug] [Thread-3 (]: Writing injected SQL for node "test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0"
+[0m13:56:58.645655 [debug] [Thread-4 (]: Writing injected SQL for node "test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e"
+[0m13:56:58.647356 [debug] [Thread-1 (]: Began executing node test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654
+[0m13:56:58.648120 [debug] [Thread-2 (]: Began executing node test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0
+[0m13:56:58.648664 [debug] [Thread-3 (]: Began executing node test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0
+[0m13:56:58.670757 [debug] [Thread-4 (]: Began executing node test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e
+[0m13:56:58.683312 [debug] [Thread-1 (]: Writing runtime sql for node "test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654"
+[0m13:56:58.685448 [debug] [Thread-2 (]: Writing runtime sql for node "test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0"
+[0m13:56:58.688461 [debug] [Thread-3 (]: Writing runtime sql for node "test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0"
+[0m13:56:58.691404 [debug] [Thread-4 (]: Writing runtime sql for node "test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e"
+[0m13:56:58.692855 [debug] [Thread-2 (]: Using duckdb connection "test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0"
+[0m13:56:58.693513 [debug] [Thread-2 (]: On test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0: BEGIN
+[0m13:56:58.694108 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m13:56:58.695694 [debug] [Thread-1 (]: Using duckdb connection "test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654"
+[0m13:56:58.694767 [debug] [Thread-3 (]: Using duckdb connection "test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0"
+[0m13:56:58.696461 [debug] [Thread-1 (]: On test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654: BEGIN
+[0m13:56:58.697347 [debug] [Thread-3 (]: On test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0: BEGIN
+[0m13:56:58.700613 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m13:56:58.698151 [debug] [Thread-4 (]: Using duckdb connection "test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e"
+[0m13:56:58.701426 [debug] [Thread-4 (]: On test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e: BEGIN
+[0m13:56:58.702167 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m13:56:58.699812 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:56:58.712242 [debug] [Thread-2 (]: SQL status: OK in 0.018 seconds
+[0m13:56:58.713256 [debug] [Thread-3 (]: SQL status: OK in 0.013 seconds
+[0m13:56:58.715615 [debug] [Thread-3 (]: Using duckdb connection "test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0"
+[0m13:56:58.714952 [debug] [Thread-1 (]: SQL status: OK in 0.015 seconds
+[0m13:56:58.714208 [debug] [Thread-2 (]: Using duckdb connection "test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0"
+[0m13:56:58.716180 [debug] [Thread-4 (]: SQL status: OK in 0.014 seconds
+[0m13:56:58.716742 [debug] [Thread-3 (]: On test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select post_uri
+from "mental_health_pulse"."main_staging"."stg_bluesky__posts"
+where post_uri is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:56:58.717371 [debug] [Thread-1 (]: Using duckdb connection "test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654"
+[0m13:56:58.718004 [debug] [Thread-2 (]: On test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select post_created_at
+from "mental_health_pulse"."main_staging"."stg_bluesky__posts"
+where post_created_at is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:56:58.718638 [debug] [Thread-4 (]: Using duckdb connection "test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e"
+[0m13:56:58.721122 [debug] [Thread-4 (]: On test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select topic_category
+from "mental_health_pulse"."main_staging"."stg_bluesky__posts"
+where topic_category is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:56:58.719307 [debug] [Thread-1 (]: On test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        topic_category as value_field,
+        count(*) as n_records
+
+    from "mental_health_pulse"."main_staging"."stg_bluesky__posts"
+    group by topic_category
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'depression','anxiety','crisis','recovery','general'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m13:56:58.725108 [debug] [Thread-3 (]: SQL status: OK in 0.006 seconds
+[0m13:56:58.736010 [debug] [Thread-3 (]: On test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0: ROLLBACK
+[0m13:56:58.737229 [debug] [Thread-2 (]: SQL status: OK in 0.017 seconds
+[0m13:56:58.738875 [debug] [Thread-4 (]: SQL status: OK in 0.017 seconds
+[0m13:56:58.742048 [debug] [Thread-3 (]: Failed to rollback 'test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0'
+[0m13:56:58.745352 [debug] [Thread-3 (]: On test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0: Close
+[0m13:56:58.744448 [debug] [Thread-4 (]: On test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e: ROLLBACK
+[0m13:56:58.746995 [info ] [Thread-3 (]: 3 of 10 PASS not_null_stg_bluesky__posts_post_uri .............................. [[32mPASS[0m in 0.15s]
+[0m13:56:58.751503 [debug] [Thread-4 (]: Failed to rollback 'test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e'
+[0m13:56:58.750004 [debug] [Thread-2 (]: On test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0: ROLLBACK
+[0m13:56:58.752147 [debug] [Thread-1 (]: SQL status: OK in 0.029 seconds
+[0m13:56:58.752951 [debug] [Thread-3 (]: Finished running node test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0
+[0m13:56:58.753583 [debug] [Thread-4 (]: On test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e: Close
+[0m13:56:58.754619 [debug] [Thread-3 (]: Began running node test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7
+[0m13:56:58.758771 [info ] [Thread-3 (]: 5 of 10 START test not_null_stg_cdc__mortality_report_year ..................... [RUN]
+[0m13:56:58.757851 [debug] [Thread-2 (]: Failed to rollback 'test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0'
+[0m13:56:58.756570 [debug] [Thread-1 (]: On test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654: ROLLBACK
+[0m13:56:58.759746 [info ] [Thread-4 (]: 4 of 10 PASS not_null_stg_bluesky__posts_topic_category ........................ [[32mPASS[0m in 0.16s]
+[0m13:56:58.760461 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.mental_health_pulse.not_null_stg_bluesky__posts_post_uri.2b39539ef0, now test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7)
+[0m13:56:58.761092 [debug] [Thread-2 (]: On test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0: Close
+[0m13:56:58.762419 [debug] [Thread-1 (]: Failed to rollback 'test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654'
+[0m13:56:58.763230 [debug] [Thread-4 (]: Finished running node test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e
+[0m13:56:58.763855 [debug] [Thread-3 (]: Began compiling node test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7
+[0m13:56:58.764647 [debug] [Thread-1 (]: On test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654: Close
+[0m13:56:58.765448 [info ] [Thread-2 (]: 2 of 10 PASS not_null_stg_bluesky__posts_post_created_at ....................... [[32mPASS[0m in 0.17s]
+[0m13:56:58.766278 [debug] [Thread-4 (]: Began running node test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c
+[0m13:56:58.776279 [info ] [Thread-4 (]: 6 of 10 START test not_null_stg_cdc__mortality_state_name ...................... [RUN]
+[0m13:56:58.774182 [debug] [Thread-3 (]: Writing injected SQL for node "test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7"
+[0m13:56:58.778244 [debug] [Thread-3 (]: Began executing node test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7
+[0m13:56:58.775359 [debug] [Thread-2 (]: Finished running node test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0
+[0m13:56:58.777209 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.mental_health_pulse.not_null_stg_bluesky__posts_topic_category.cadd68a45e, now test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c)
+[0m13:56:58.781519 [debug] [Thread-3 (]: Writing runtime sql for node "test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7"
+[0m13:56:58.782419 [debug] [Thread-2 (]: Began running node test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d
+[0m13:56:58.785134 [info ] [Thread-2 (]: 7 of 10 START test source_not_null_raw_bluesky_posts_post_uri .................. [RUN]
+[0m13:56:58.785942 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.mental_health_pulse.not_null_stg_bluesky__posts_post_created_at.f64ebedce0, now test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d)
+[0m13:56:58.784351 [debug] [Thread-4 (]: Began compiling node test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c
+[0m13:56:58.783717 [info ] [Thread-1 (]: 1 of 10 PASS accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general  [[32mPASS[0m in 0.19s]
+[0m13:56:58.786469 [debug] [Thread-2 (]: Began compiling node test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d
+[0m13:56:58.792507 [debug] [Thread-3 (]: Using duckdb connection "test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7"
+[0m13:56:58.792082 [debug] [Thread-4 (]: Writing injected SQL for node "test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c"
+[0m13:56:58.793878 [debug] [Thread-1 (]: Finished running node test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654
+[0m13:56:58.799608 [debug] [Thread-2 (]: Writing injected SQL for node "test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d"
+[0m13:56:58.800328 [debug] [Thread-3 (]: On test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7: BEGIN
+[0m13:56:58.801253 [debug] [Thread-1 (]: Began running node test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65
+[0m13:56:58.802240 [debug] [Thread-4 (]: Began executing node test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c
+[0m13:56:58.802984 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m13:56:58.803841 [info ] [Thread-1 (]: 8 of 10 START test source_not_null_raw_cdc_drug_overdose_monthly_state_name .... [RUN]
+[0m13:56:58.808871 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.mental_health_pulse.accepted_values_stg_bluesky__posts_topic_category__depression__anxiety__crisis__recovery__general.f22bf23654, now test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65)
+[0m13:56:58.807064 [debug] [Thread-4 (]: Writing runtime sql for node "test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c"
+[0m13:56:58.809690 [debug] [Thread-1 (]: Began compiling node test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65
+[0m13:56:58.807955 [debug] [Thread-2 (]: Began executing node test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d
+[0m13:56:58.818747 [debug] [Thread-1 (]: Writing injected SQL for node "test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65"
+[0m13:56:58.823501 [debug] [Thread-2 (]: Writing runtime sql for node "test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d"
+[0m13:56:58.824684 [debug] [Thread-4 (]: Using duckdb connection "test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c"
+[0m13:56:58.825737 [debug] [Thread-1 (]: Began executing node test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65
+[0m13:56:58.827943 [debug] [Thread-2 (]: Using duckdb connection "test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d"
+[0m13:56:58.839775 [debug] [Thread-2 (]: On test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d: BEGIN
+[0m13:56:58.832409 [debug] [Thread-4 (]: On test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c: BEGIN
+[0m13:56:58.844072 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m13:56:58.841668 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:56:58.840970 [debug] [Thread-3 (]: SQL status: OK in 0.038 seconds
+[0m13:56:58.843331 [debug] [Thread-1 (]: Writing runtime sql for node "test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65"
+[0m13:56:58.846095 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m13:56:58.848457 [debug] [Thread-2 (]: Using duckdb connection "test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d"
+[0m13:56:58.849419 [debug] [Thread-2 (]: On test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select post_uri
+from "mental_health_pulse"."raw_bluesky"."posts"
+where post_uri is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:56:58.847790 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m13:56:58.850829 [debug] [Thread-4 (]: Using duckdb connection "test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c"
+[0m13:56:58.851554 [debug] [Thread-4 (]: On test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select state_name
+from "mental_health_pulse"."main_staging"."stg_cdc__mortality"
+where state_name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:56:58.846748 [debug] [Thread-3 (]: Using duckdb connection "test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7"
+[0m13:56:58.852684 [debug] [Thread-1 (]: Using duckdb connection "test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65"
+[0m13:56:58.853525 [debug] [Thread-3 (]: On test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select report_year
+from "mental_health_pulse"."main_staging"."stg_cdc__mortality"
+where report_year is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:56:58.854666 [debug] [Thread-1 (]: On test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65: BEGIN
+[0m13:56:58.857642 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:56:58.859010 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m13:56:58.855253 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m13:56:58.859988 [debug] [Thread-4 (]: SQL status: OK in 0.008 seconds
+[0m13:56:58.860643 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m13:56:58.861255 [debug] [Thread-1 (]: Using duckdb connection "test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65"
+[0m13:56:58.864960 [debug] [Thread-4 (]: On test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c: ROLLBACK
+[0m13:56:58.867477 [debug] [Thread-3 (]: On test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7: ROLLBACK
+[0m13:56:58.868261 [debug] [Thread-1 (]: On test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select state_name
+from "mental_health_pulse"."raw_cdc"."drug_overdose_monthly"
+where state_name is null
+
+
+
+      
+    ) dbt_internal_test
+[0m13:56:58.870200 [debug] [Thread-3 (]: Failed to rollback 'test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7'
+[0m13:56:58.871564 [debug] [Thread-4 (]: Failed to rollback 'test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c'
+[0m13:56:58.875887 [debug] [Thread-4 (]: On test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c: Close
+[0m13:56:58.873980 [debug] [Thread-2 (]: On test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d: ROLLBACK
+[0m13:56:58.874923 [debug] [Thread-3 (]: On test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7: Close
+[0m13:56:58.877823 [debug] [Thread-2 (]: Failed to rollback 'test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d'
+[0m13:56:58.878724 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m13:56:58.880122 [info ] [Thread-3 (]: 5 of 10 PASS not_null_stg_cdc__mortality_report_year ........................... [[32mPASS[0m in 0.12s]
+[0m13:56:58.881130 [info ] [Thread-4 (]: 6 of 10 PASS not_null_stg_cdc__mortality_state_name ............................ [[32mPASS[0m in 0.10s]
+[0m13:56:58.882008 [debug] [Thread-2 (]: On test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d: Close
+[0m13:56:58.884657 [debug] [Thread-1 (]: On test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65: ROLLBACK
+[0m13:56:58.885957 [debug] [Thread-3 (]: Finished running node test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7
+[0m13:56:58.886991 [debug] [Thread-4 (]: Finished running node test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c
+[0m13:56:58.888681 [debug] [Thread-1 (]: Failed to rollback 'test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65'
+[0m13:56:58.892405 [debug] [Thread-1 (]: On test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65: Close
+[0m13:56:58.890929 [debug] [Thread-3 (]: Began running node test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521
+[0m13:56:58.891799 [debug] [Thread-4 (]: Began running node test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef
+[0m13:56:58.895127 [info ] [Thread-4 (]: 10 of 10 START test unique_stg_bluesky__posts_post_uri ......................... [RUN]
+[0m13:56:58.889757 [info ] [Thread-2 (]: 7 of 10 PASS source_not_null_raw_bluesky_posts_post_uri ........................ [[32mPASS[0m in 0.10s]
+[0m13:56:58.897351 [debug] [Thread-2 (]: Finished running node test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d
+[0m13:56:58.893948 [info ] [Thread-3 (]: 9 of 10 START test source_unique_raw_bluesky_posts_post_uri .................... [RUN]
+[0m13:56:58.896181 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.mental_health_pulse.not_null_stg_cdc__mortality_state_name.05e725ec4c, now test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef)
+[0m13:56:58.898908 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.mental_health_pulse.not_null_stg_cdc__mortality_report_year.a343efa5e7, now test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521)
+[0m13:56:58.904123 [debug] [Thread-3 (]: Began compiling node test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521
+[0m13:56:58.903233 [debug] [Thread-4 (]: Began compiling node test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef
+[0m13:56:58.901601 [info ] [Thread-1 (]: 8 of 10 PASS source_not_null_raw_cdc_drug_overdose_monthly_state_name .......... [[32mPASS[0m in 0.09s]
+[0m13:56:58.922994 [debug] [Thread-3 (]: Writing injected SQL for node "test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521"
+[0m13:56:58.925720 [debug] [Thread-4 (]: Writing injected SQL for node "test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef"
+[0m13:56:58.926819 [debug] [Thread-1 (]: Finished running node test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65
+[0m13:56:58.928171 [debug] [Thread-4 (]: Began executing node test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef
+[0m13:56:58.928836 [debug] [Thread-3 (]: Began executing node test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521
+[0m13:56:58.933000 [debug] [Thread-4 (]: Writing runtime sql for node "test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef"
+[0m13:56:58.937098 [debug] [Thread-3 (]: Writing runtime sql for node "test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521"
+[0m13:56:58.938597 [debug] [Thread-3 (]: Using duckdb connection "test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521"
+[0m13:56:58.939319 [debug] [Thread-3 (]: On test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521: BEGIN
+[0m13:56:58.940094 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m13:56:58.941119 [debug] [Thread-4 (]: Using duckdb connection "test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef"
+[0m13:56:58.942173 [debug] [Thread-4 (]: On test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef: BEGIN
+[0m13:56:58.943174 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m13:56:58.971272 [debug] [Thread-3 (]: SQL status: OK in 0.031 seconds
+[0m13:56:58.973108 [debug] [Thread-3 (]: Using duckdb connection "test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521"
+[0m13:56:58.974103 [debug] [Thread-3 (]: On test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    post_uri as unique_field,
+    count(*) as n_records
+
+from "mental_health_pulse"."raw_bluesky"."posts"
+where post_uri is not null
+group by post_uri
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m13:56:58.976510 [debug] [Thread-4 (]: SQL status: OK in 0.033 seconds
+[0m13:56:58.977404 [debug] [Thread-4 (]: Using duckdb connection "test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef"
+[0m13:56:58.985077 [debug] [Thread-4 (]: On test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "mental_health_pulse", "target_name": "dev", "node_id": "test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    post_uri as unique_field,
+    count(*) as n_records
+
+from "mental_health_pulse"."main_staging"."stg_bluesky__posts"
+where post_uri is not null
+group by post_uri
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m13:56:58.998819 [debug] [Thread-3 (]: SQL status: OK in 0.024 seconds
+[0m13:56:59.009768 [debug] [Thread-3 (]: On test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521: ROLLBACK
+[0m13:56:59.011564 [debug] [Thread-3 (]: Failed to rollback 'test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521'
+[0m13:56:59.012409 [debug] [Thread-3 (]: On test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521: Close
+[0m13:56:59.015415 [info ] [Thread-3 (]: 9 of 10 PASS source_unique_raw_bluesky_posts_post_uri .......................... [[32mPASS[0m in 0.12s]
+[0m13:56:59.020975 [debug] [Thread-3 (]: Finished running node test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521
+[0m13:56:59.028050 [debug] [Thread-4 (]: SQL status: OK in 0.042 seconds
+[0m13:56:59.031226 [debug] [Thread-4 (]: On test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef: ROLLBACK
+[0m13:56:59.032916 [debug] [Thread-4 (]: Failed to rollback 'test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef'
+[0m13:56:59.033751 [debug] [Thread-4 (]: On test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef: Close
+[0m13:56:59.044417 [info ] [Thread-4 (]: 10 of 10 PASS unique_stg_bluesky__posts_post_uri ............................... [[32mPASS[0m in 0.15s]
+[0m13:56:59.048322 [debug] [Thread-4 (]: Finished running node test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef
+[0m13:56:59.054298 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:56:59.055158 [debug] [MainThread]: On master: BEGIN
+[0m13:56:59.055818 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:56:59.074292 [debug] [MainThread]: SQL status: OK in 0.018 seconds
+[0m13:56:59.075074 [debug] [MainThread]: On master: COMMIT
+[0m13:56:59.075664 [debug] [MainThread]: Using duckdb connection "master"
+[0m13:56:59.076123 [debug] [MainThread]: On master: COMMIT
+[0m13:56:59.077023 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m13:56:59.077506 [debug] [MainThread]: On master: Close
+[0m13:56:59.080871 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:56:59.081428 [debug] [MainThread]: Connection 'test.mental_health_pulse.source_not_null_raw_cdc_drug_overdose_monthly_state_name.59817eff65' was properly closed.
+[0m13:56:59.081871 [debug] [MainThread]: Connection 'test.mental_health_pulse.source_not_null_raw_bluesky_posts_post_uri.44dc7dee7d' was properly closed.
+[0m13:56:59.082335 [debug] [MainThread]: Connection 'test.mental_health_pulse.source_unique_raw_bluesky_posts_post_uri.00b5201521' was properly closed.
+[0m13:56:59.082779 [debug] [MainThread]: Connection 'test.mental_health_pulse.unique_stg_bluesky__posts_post_uri.18c65f64ef' was properly closed.
+[0m13:56:59.083792 [info ] [MainThread]: 
+[0m13:56:59.084464 [info ] [MainThread]: Finished running 10 data tests in 0 hours 0 minutes and 0.76 seconds (0.76s).
+[0m13:56:59.087374 [debug] [MainThread]: Command end result
+[0m13:56:59.134609 [info ] [MainThread]: 
+[0m13:56:59.135549 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:56:59.136199 [info ] [MainThread]: 
+[0m13:56:59.136847 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=0 SKIP=0 TOTAL=10
+[0m13:56:59.138925 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.8818201, "process_user_time": 5.049794, "process_kernel_time": 0.297864, "process_mem_max_rss": "175428", "process_out_blocks": "2056", "process_in_blocks": "0"}
+[0m13:56:59.139998 [debug] [MainThread]: Command `dbt test` succeeded at 13:56:59.139795 after 1.88 seconds
+[0m13:56:59.140926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7825bb5608f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7825bb560980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7825bb562cf0>]}
+[0m13:56:59.141655 [debug] [MainThread]: Flushing usage events

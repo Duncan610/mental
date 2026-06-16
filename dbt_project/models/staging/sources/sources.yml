@@ -1,0 +1,24 @@
+
+version: 2
+
+sources:
+  - name: raw_bluesky
+    database: mental_health_pulse
+    schema: raw_bluesky
+    tables:
+      - name: posts
+        columns:
+          - name: post_uri
+            tests:
+              - not_null
+              - unique
+
+  - name: raw_cdc
+    database: mental_health_pulse
+    schema: raw_cdc
+    tables:
+      - name: drug_overdose_monthly
+        columns:
+          - name: state_name
+            tests:
+              - not_null

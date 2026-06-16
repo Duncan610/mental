@@ -1,0 +1,34 @@
+
+version: 2
+
+models:
+  - name: stg_bluesky__posts
+    description: >
+      Cleaned Bluesky posts from mental health search terms.
+      Grain: one row per unique post (post_uri).
+    columns:
+      - name: post_uri
+        description: AT Protocol URI - unique post identifier
+        tests:
+          - not_null
+          - unique
+      - name: topic_category
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['depression', 'anxiety', 'crisis', 'recovery', 'general']
+      - name: post_created_at
+        tests:
+          - not_null
+
+  - name: stg_cdc__mortality
+    description: >
+      Cleaned CDC drug overdose monthly counts by state.
+      Grain: one row per state per month per substance indicator.
+    columns:
+      - name: state_name
+        tests:
+          - not_null
+      - name: report_year
+        tests:
+          - not_null
