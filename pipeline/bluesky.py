@@ -273,7 +273,7 @@ def run_bluesky_pipeline(settings: Settings) -> dlt.Pipeline:
     pipeline = dlt.pipeline(
         pipeline_name="mental_health_bluesky",
         destination=dlt.destinations.duckdb(
-            credentials=f"../data/duckdb/mental_health_pulse.duckdb"
+            credentials="data/duckdb/mental_health_pulse.duckdb"
         ),
         dataset_name="raw_bluesky",   # → DuckDB schema: raw_bluesky
     )
